@@ -20,7 +20,7 @@ Artemis Sublime Tools is a plugin containining tools that were designed to be us
 Press `Ctrl+Shift+P` and type one of the following commands
 
 ### Artemis: Open Jasmine Unit Test
-Creates and opens a new tab in Sublime Text containing the Jasmine spec file of the JavaScript file that was active. 
+Creates and opens a new tab in Sublime Text containing the Jasmine spec file of the JavaScript file that was active.
 
 **Example:**
 
