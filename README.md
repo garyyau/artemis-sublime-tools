@@ -7,14 +7,14 @@ Artemis Sublime Tools is a plugin containining tools that were designed to be us
   2. Edit your .sublime-project file and add the `project_paths` setting object with paths the JavaScript src directory and Jasmine Unit Test spec directory
 
   **Example:**
-```
-{
-    "project_paths": {
-"jasmine_spec": "C:\\Sites\\artemis\\src\\SuperShotgun\\javascript\\src",
-"javascript_src": "C:\\Sites\\artemis\\src\\SuperShotgun\\javascript\\spec",
-    },
-}
-```
+  ```
+  {
+  	"project_paths": {
+  		"jasmine_spec": "C:\\Sites\\artemis\\src\\SuperShotgun\\javascript\\src",
+  		"javascript_src": "C:\\Sites\\artemis\\src\\SuperShotgun\\javascript\\spec",
+      },
+  }
+  ```
 
 ## Commands
 Press `Ctrl+Shift+P` and type one of the following commands
