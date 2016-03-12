@@ -60,6 +60,7 @@ class OpenJasmineUnitTest(sublime_plugin.TextCommand):
 
     def run(self, edit):
         self.load_project_paths()
+        self.load_spec_suffix()
 
         current_file_path = self.view.file_name()
         current_file = JavaScriptFile(current_file_path)
@@ -77,6 +78,13 @@ class OpenJasmineUnitTest(sublime_plugin.TextCommand):
         paths = self.view.window().project_data().get("project_paths", {})
         self.spec_location = paths["jasmine_spec"]
         self.src_location = paths["javascript_src"]
+
+    def load_spec_suffix(self):
+        """
+        Loads the `jasmine_spec_suffix` parameter from the Sublime Text project settings
+        file, looking for suffix to use for the spec file.
+        """
+        self.spec_suffix = self.view.window().project_data().get("jasmine_spec_suffix", "_spec")
 
     def get_spec_path(self, current_file):
         """
@@ -106,4 +114,4 @@ class OpenJasmineUnitTest(sublime_plugin.TextCommand):
         """
         file_base_name = file.get_base_name()
         file_ext = file.get_ext()
-        return file_base_name + "_spec" + file_ext
+        return file_base_name + self.spec_suffix + file_ext

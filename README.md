@@ -27,3 +27,13 @@ Creates and opens a new tab in Sublime Text containing the Jasmine spec file of 
 * Open `..\src\page_scripts\breakdowns\models\validator\breakdown_shot_validator.js`
 * Press `Ctrl+Shift+P` and type in **Artemis: Open Jasmine Unit Test**
 * `..\spec\page_scripts\breakdowns\models\validator\breakdown_shot_validator_spec.js` file will be created and opened on Sublime Text
+  
+
+
+
+
+
+
+
+
+         
